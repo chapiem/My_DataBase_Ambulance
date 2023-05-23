@@ -1,0 +1,3 @@
+"ambulance_car_id","car_brand","car_number","car_type_id","driver_id","doctor_id","paramedic_id","name","doctor"
+2,Volkswagen,"2345 JF-4",2,6,4,5,Александр,Реанимация
+3,Volkswagen,"2346 EV-4",2,6,7,5,Александр,Реанимация
