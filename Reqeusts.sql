@@ -25,6 +25,14 @@ join employees e on  ac.driver_id = e.employee_id
 join car_types ct on  ac.car_type_id = ct.car_type_id
 where ct.description = 'Реанимация';
 
+-- 6
+-- Список всех id сотрудников и машин скорой помощи, с указанием имени сотрудника и марки машины
+select employee_id, name from employees 
+union all
+select ambulance_car_id, car_brand from ambulance_cars;
 
+-- 7
+-- я
 
-
+-- 8
+-- 
