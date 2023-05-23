@@ -17,3 +17,14 @@ where specialization_id = 1 or specialization_id = 2;
 -- Список сотрудников с описанием их специализации
 select e.*, s.description  from employees e
 join specializations s on  e.specialization_id = s.specialization_id;
+
+-- 5
+-- Список машин скорой помощи, тип которых "Реанимация", с указанием имени водителя
+select ac.*, e.name, ct.description  as doctor  from ambulance_cars ac 
+join employees e on  ac.driver_id = e.employee_id
+join car_types ct on  ac.car_type_id = ct.car_type_id
+where ct.description = 'Реанимация';
+
+
+
+
