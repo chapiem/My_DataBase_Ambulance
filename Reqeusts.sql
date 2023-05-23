@@ -12,3 +12,8 @@ group by specialization_id;
 -- Список сотрудников, у которых специализации доктор или фельдшер
 select * from employees 
 where specialization_id = 1 or specialization_id = 2;
+
+-- 4
+-- Список сотрудников с описанием их специализации
+select e.*, s.description  from employees e
+join specializations s on  e.specialization_id = s.specialization_id;
