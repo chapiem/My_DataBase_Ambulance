@@ -32,7 +32,10 @@ union all
 select ambulance_car_id, car_brand from ambulance_cars;
 
 -- 7
--- я
+-- Список всех сотрудников которые не назначены водителями машин скорой помощи
+select e.* from employees e 
+left join ambulance_cars ac on e.employee_id = ac.driver_id 
+where ac.driver_id is null;
 
 -- 8
 -- 
